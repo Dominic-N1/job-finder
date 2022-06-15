@@ -254,7 +254,7 @@ textarea {
 @media screen and (max-width: 800px) {
     .job-edit-id {
         line-height: 1;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 }
 form > :first-child {
