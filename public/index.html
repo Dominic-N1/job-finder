@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <!-- normalize css -->
+        <link rel="stylesheet" href="./normalize.css" />
+        <!-- main css -->
+        <link rel="stylesheet" href="./main.css" />
+        <title>Job Finder</title>
+        <!-- axios -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- js -->
+        <script defer src="./browser-app.js"></script>
+    </head>
+    <body>
+        <form class="job-form">
+            <h4>job finder</h4>
+            <div class="form-control-make">
+                <input
+                    type="text"
+                    name="name"
+                    class="job-input"
+                    placeholder="FirstFactory"
+                />
+                <input
+                    type="text"
+                    name="title"
+                    class="title-input"
+                    placeholder="JavaScript Fullstack Dev"
+                />
+                <input
+                    type="url"
+                    name="website"
+                    class="website-input"
+                    placeholder="https://firstfactory.com/"
+                />
+                <input
+                    type="text"
+                    name="country"
+                    class="country-input"
+                    placeholder="Costa Rica"
+                />
+                <button type="submit" class="btn submit-btn">submit</button>
+            </div>
+            <div class="form-alert"></div>
+        </form>
+        <section class="jobs-container">
+            <p class="loading-text">Loading...</p>
+            <div class="jobs"></div>
+        </section>
+    </body>
+</html>

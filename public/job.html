@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <!-- normalize -->
+        <link rel="stylesheet" href="./normalize.css" />
+        <!-- main  -->
+        <link rel="stylesheet" href="./main.css" />
+        <title>Edit Job</title>
+        <!-- axios -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- js -->
+        <script defer src="./edit-job.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="single-job-form">
+                <h4>Edit Job</h4>
+                <div class="form-control">
+                    <label>Job ID</label>
+                    <p class="job-edit-id"></p>
+                </div>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <!-- <p class="job-edit-name"></p> -->
+                    <input type="text" name="name" class="job-edit-name" />
+                </div>
+                <div class="form-control">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="job-edit-title" />
+                </div>
+                <div class="form-control">
+                    <label for="website">URL</label>
+                    <input type="url" name="website" class="job-edit-website" />
+                </div>
+                <div class="form-control">
+                    <label for="country">Country</label>
+                    <input
+                        type="text"
+                        name="country"
+                        class="job-edit-country"
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="update">Datetime</label>
+                    <p class="job-edit-update"></p>
+                </div>
+                <fieldset class="form-control">
+                    <legend>Select a stage:</legend>
+                    <label for="one">request</label>
+                    <input
+                        class="job-edit-completed"
+                        type="radio"
+                        id="one"
+                        name="stage"
+                        value="one"
+                        checked
+                    />
+                    <label for="two">response</label>
+                    <input
+                        class="job-edit-completed"
+                        type="radio"
+                        id="two"
+                        name="stage"
+                        value="two"
+                    />
+                    <label for="three">data</label>
+                    <input
+                        class="job-edit-completed"
+                        type="radio"
+                        id="three"
+                        name="stage"
+                        value="three"
+                    />
+                    <label for="four">finally</label>
+                    <input
+                        class="job-edit-completed"
+                        type="radio"
+                        id="four"
+                        name="stage"
+                        value="four"
+                    />
+                </fieldset>
+                <div class="form-control">
+                    <label for="completed">completed</label>
+                    <input
+                        type="checkbox"
+                        name="completed"
+                        class="job-edit-completed"
+                    />
+                </div>
+                <button type="submit" class="block btn job-edit-btn">
+                    edit
+                </button>
+                <div class="form-alert"></div>
+            </form>
+            <a href="index.html" class="btn back-link">back to jobs</a>
+        </div>
+    </body>
+</html>
